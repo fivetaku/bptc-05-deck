@@ -89,8 +89,9 @@ Speaker note:
 <div style="background:#F5F5F5; border-radius:18px; padding:28px;">
 <div class="kpi" style="font-size:20px;">ccusage란?</div>
 <div style="font-size:22px; line-height:1.65; margin-top:10px;">
-Claude Code가 쌓아둔 로컬 사용 기록을<br/>
-표·그래프로 보여주는 CLI 도구.
+Claude Code가 쌓아둔 사용 기록을<br/>
+표·그래프로 보여주는 도구입니다.<br/>
+<span style="font-size:18px;">(터미널에 명령어를 입력하는 CLI 방식)</span>
 </div>
 <div style="font-size:20px; color:#5B5B5B; margin-top:12px; line-height:1.6;">
 보여주는 것<br/>
@@ -160,7 +161,7 @@ ccusage daily 결과 띄워보면, 본인이 어느 날 유독 많이 썼는지 
 <div style="background:#FFE5EB; border-radius:14px; padding:22px;">
 <div class="kpi" style="font-size:18px;">자주 잡히는 패턴 ③</div>
 <div style="font-size:22px; font-weight:800; margin-top:6px;">사이드 잡담을 메인에서</div>
-<div style="font-size:18px; color:#5B5B5B; margin-top:6px;">"이거 뭐야?" 같은 짧은 질문이 캐시를 깨뜨림 → /btw로 분리</div>
+<div style="font-size:18px; color:#5B5B5B; margin-top:6px;">"이거 뭐야?" 같은 짧은 질문이 이전 대화 재사용을 끊음 → /btw로 분리</div>
 </div>
 
 <div style="background:#FFE5EB; border-radius:14px; padding:22px;">
@@ -176,35 +177,36 @@ ccusage daily 결과 띄워보면, 본인이 어느 날 유독 많이 썼는지 
 
 <!-- _class: title-lock -->
 
-# 캐시가 전부다 <span style="font-size:0.44em; color:#5B5B5B;">Anthropic 공식</span>
+# 왜 캐시가 중요한가 <span style="font-size:0.44em; color:#5B5B5B;">Anthropic 공식</span>
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:32px;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:40px;">
 
-<div style="background:#F5F5F5; border-radius:18px; padding:32px;">
-<div class="kpi" style="font-size:20px;">AI 비서 가격표</div>
-<table style="font-size:24px; margin-top:14px;">
-<tr><th>모델</th><th>입력</th><th>출력</th></tr>
-<tr><td>Opus</td><td>$15/M</td><td>$75/M</td></tr>
-<tr><td>Sonnet</td><td>$3/M</td><td>$15/M</td></tr>
-<tr><td>Haiku</td><td>$0.80/M</td><td>$4/M</td></tr>
-</table>
-<div style="font-size:20px; color:#5B5B5B; margin-top:14px;">Sonnet은 Opus의 1/5 가격</div>
+<div style="background:#F5F5F5; border-radius:18px; padding:40px;">
+<div class="kpi" style="font-size:20px;">모델은 비싼 순서</div>
+<div style="font-size:34px; font-weight:800; line-height:1.5; margin-top:18px;">
+Opus &gt; Sonnet &gt; Haiku
+</div>
+<div style="font-size:24px; color:#5B5B5B; margin-top:16px;">
+똑똑한 모델일수록 비쌈<br/>
+Opus는 Sonnet의 약 5배
+</div>
 </div>
 
-<div style="background:#FFE5EB; border-radius:18px; padding:32px;">
-<div class="kpi" style="font-size:20px;">★ 캐시 적용 시</div>
-<div style="font-size:42px; font-weight:800; line-height:1.4; margin-top:18px;">
-캐시 읽기<br/>
-<span style="color:#FC1C49;">기본가 × 0.1</span>
+<div style="background:#FFE5EB; border-radius:18px; padding:40px;">
+<div class="kpi" style="font-size:20px;">★ 캐시를 쓰면</div>
+<div style="font-size:64px; font-weight:800; line-height:1.3; margin-top:18px; color:#FC1C49;">
+90% 절감
 </div>
-<div style="font-size:32px; color:#5B5B5B; margin-top:12px;">= 90% 절감</div>
-<div style="font-size:20px; color:#5B5B5B; margin-top:18px;">캐시 쓰기 1.25× / 1시간 TTL 2×</div>
+<div style="font-size:24px; color:#5B5B5B; margin-top:16px;">
+한 번 읽은 내용을<br/>
+다시 안 읽어도 되니까
+</div>
 </div>
 
 </div>
 
-<div style="font-size:24px; margin-top:24px;">
-<strong>비유:</strong> "어제 본 서류는 다시 안 봐도 됨" = 캐시. 매번 인삿말부터 다시 = 캐시 깨짐.
+<div style="font-size:26px; margin-top:36px; text-align:center;">
+<strong>비유</strong> — "어제 본 서류는 다시 안 봐도 됨" = 캐시 / 매번 인삿말부터 다시 = 캐시 깨짐
 </div>
 
 ---
@@ -360,7 +362,7 @@ AI에게 자연어로 말한다<br/>
 
 <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; margin-top:24px;">
 
-<div style="background:#F5F5F5; border-radius:14px; padding:22px; min-height:460px;">
+<div style="background:#F5F5F5; border-radius:14px; padding:22px; min-height:420px;">
 <div class="kpi" style="font-size:18px;">DB 1 · 부산 도시철도</div>
 <div style="font-size:24px; font-weight:800; margin-top:6px;">bptc_busan.db</div>
 <div style="font-size:18px; color:#5B5B5B; margin-top:4px;">66 MB · 5 테이블</div>
@@ -379,7 +381,7 @@ AI에게 자연어로 말한다<br/>
 </div>
 </div>
 
-<div style="background:#F5F5F5; border-radius:14px; padding:22px; min-height:460px;">
+<div style="background:#F5F5F5; border-radius:14px; padding:22px; min-height:420px;">
 <div class="kpi" style="font-size:18px;">DB 2 · 한국 주식</div>
 <div style="font-size:24px; font-weight:800; margin-top:6px;">bptc_stocks.db</div>
 <div style="font-size:18px; color:#5B5B5B; margin-top:4px;">83 MB · 7 테이블</div>
@@ -399,7 +401,7 @@ AI에게 자연어로 말한다<br/>
 </div>
 </div>
 
-<div style="background:#FFE5EB; border-radius:14px; padding:22px; min-height:460px;">
+<div style="background:#FFE5EB; border-radius:14px; padding:22px; min-height:420px;">
 <div class="kpi" style="font-size:18px;">DB 3 · 부산 부동산</div>
 <div style="font-size:24px; font-weight:800; margin-top:6px;">bptc_realestate.db</div>
 <div style="font-size:18px; color:#5B5B5B; margin-top:4px;">149 MB · 11 테이블</div>
@@ -575,8 +577,8 @@ ERD 작성은 AI에게 시킵니다. 사람은 그림에서 표끼리 어떻게 
 
 <div style="background:#F5F5F5; border-radius:12px; padding:20px;">
 <div class="kpi" style="font-size:16px;">도시철도 3</div>
-<div style="font-size:22px; font-weight:800; margin-top:6px;">BIFF 해운대역 변화</div>
-<div style="font-size:18px; color:#5B5B5B; margin-top:8px;">평소 대비 +52%</div>
+<div style="font-size:22px; font-weight:800; margin-top:6px;">서면역 출근 vs 퇴근</div>
+<div style="font-size:18px; color:#5B5B5B; margin-top:8px;">퇴근 하차 18시 3,001명 (출근 승차의 3배)</div>
 </div>
 
 <div style="background:#FFE5EB; border-radius:12px; padding:20px;">
@@ -606,13 +608,13 @@ ERD 작성은 AI에게 시킵니다. 사람은 그림에서 표끼리 어떻게 
 <div style="background:#F5F5F5; border-radius:12px; padding:20px;">
 <div class="kpi" style="font-size:16px;">주식 2</div>
 <div style="font-size:22px; font-weight:800; margin-top:6px;">외국인 보유율 추이</div>
-<div style="font-size:18px; color:#5B5B5B; margin-top:8px;">삼성전자 5년 -2.7%p</div>
+<div style="font-size:18px; color:#5B5B5B; margin-top:8px;">삼성전자 5년 -7.4%p (55.7→48.3%)</div>
 </div>
 
 <div style="background:#F5F5F5; border-radius:12px; padding:20px;">
 <div class="kpi" style="font-size:16px;">주식 3</div>
 <div style="font-size:22px; font-weight:800; margin-top:6px;">코스피 vs 코스닥</div>
-<div style="font-size:18px; color:#5B5B5B; margin-top:8px;">5년 +95% vs +28%</div>
+<div style="font-size:18px; color:#5B5B5B; margin-top:8px;">5년 +165% vs +13%</div>
 </div>
 
 </div>
@@ -632,7 +634,7 @@ ERD 작성은 AI에게 시킵니다. 사람은 그림에서 표끼리 어떻게 
 <div style="background:#F5F5F5; border-radius:18px; padding:36px;">
 <div class="kpi" style="font-size:20px;">표 하나로 셌을 때</div>
 <div style="font-size:60px; font-weight:800; margin-top:18px; text-align:center;">6,228 <span style="font-size:30px;">개</span></div>
-<div style="font-size:24px; color:#FC1C49; font-weight:800; text-align:center; margin-top:18px;">✓ 맞는 답</div>
+<div style="font-size:24px; color:#16A34A; font-weight:800; text-align:center; margin-top:18px;">✓ 맞는 답</div>
 </div>
 
 <div style="background:#FFE5EB; border-radius:18px; padding:36px;">
@@ -683,7 +685,7 @@ Speaker note:
 
 <div style="margin-top:22px;">
 
-<div class="kpi" style="font-size:20px;">AI가 자주 범하는 오류</div>
+<div class="kpi" style="font-size:20px;">검토 프롬프트가 잡아내는 것</div>
 
 <div style="font-size:20px; line-height:1.85; margin-top:8px;">
 · 표 두 개를 합칠 때 줄이 중복돼 합계가 부풀려진다<br/>
@@ -738,7 +740,9 @@ AI가 "맞습니다"만 반복하면 → "숫자로 다시 보여줘"를 덧붙�
 
 # 실습 2 <span style="font-size:0.44em; color:#5B5B5B;">부산 부동산 + 학군 · 60분</span>
 
-<div style="margin-top:32px;">
+<div style="font-size:20px; color:#5B5B5B; margin-top:16px;">실습 1에서 5단계를 익혔으니, 여기서는 질문·만들기·개선 세 단계에 집중합니다 (기획·검토는 같은 흐름).</div>
+
+<div style="margin-top:20px;">
 
 <div style="background:#F5F5F5; padding:24px 32px; border-radius:14px; margin-bottom:18px;">
 <div class="kpi" style="font-size:20px;">1️⃣ 질문하기</div>
@@ -748,8 +752,8 @@ AI가 "맞습니다"만 반복하면 → "숫자로 다시 보여줘"를 덧붙�
 <div style="background:#FFE5EB; padding:24px 32px; border-radius:14px; margin-bottom:18px;">
 <div class="kpi" style="font-size:20px;">3️⃣ 만들기 — 25분</div>
 <div style="font-size:24px; margin-top:6px; line-height:1.6;">
-연도별 평균 거래금액 라인 + 단지 TOP 10<br/>
-<code>SELECT gu_name, AVG(dealAmount) FROM apt_trade WHERE ...</code>
+"연도별 평균 거래금액 추이랑 단지 TOP 10 보여줘"<br/>
+<span style="color:#5B5B5B; font-size:20px;">→ 쿼리는 AI가 작성, 결과만 차트로 받음</span>
 </div>
 </div>
 
