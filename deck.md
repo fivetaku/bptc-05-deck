@@ -20,9 +20,9 @@ code { font-size: 0.85em; }
 
 <!-- _class: banner -->
 
-<div class="tag">[ BPTC AX 5회차 · 2026-05-27 ]</div>
+<div class="tag">[ BPTC AX · 2026-05-27 ]</div>
 
-# 토큰 절약 + 데이터베이스 실습<br/><span style="font-size:0.52em; color:#5B5B5B;">아끼는 법부터 다루는 법까지</span>
+# 5회차<br/><span style="font-size:0.46em; color:#5B5B5B;">토큰 절약 + 데이터베이스</span>
 
 <div class="by">By. 이철로 (지피타쿠)</div>
 
